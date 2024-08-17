@@ -1,0 +1,195 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Gasoek+One&family=Nanum+Myeongjo&display=swap");
+@font-face {
+  font-family: "BM DoHyeon";
+  src: url("../fonts/BMDoHyeon.eot");
+  src: url("../fonts/BMDoHyeon.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/BMDoHyeon.woff2") format("woff2"),
+    url("../fonts/BMDoHyeon.woff") format("woff"),
+    url("../fonts/BMDoHyeon.ttf") format("truetype"),
+    url("../fonts/BMDoHyeon.svg#BMDoHyeon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  /* font-family: "BM DoHyeon"; */
+  font-family: "Nanum Myeongjo", serif;
+}
+.external_font {
+  font-family: "Nanum Myeongjo", serif;
+}
+.inner_font {
+  font-family: "BM DoHyeon";
+}
+/* 폰트의 크기(font-size) */
+.unit_px {
+  font-size: 20px;
+}
+/* 기본은 16, 14px이하로 쓰면 안보임 */
+.unit_pt {
+  font-size: 20pt;
+}
+/* px,pt랑 같은 사이즈여도 pt가 더 큼 */
+.unit_vw {
+  font-size: 10vw;
+}
+/* 화면을 꽉 채우는(화면 크기에 따라 다름 */
+.unit_vh {
+  font-size: 5vh;
+}
+.unit_em {
+  font-size: 32px;
+  line-height: 1;
+  background-color: #faa;
+}
+.unit_em > h5 > {
+  font-size: 0.75em;
+}
+.unit_em > p {
+  font-size: 0.5em;
+}
+/* 부모가 폰트의 크기를 선언하지 않은경우, 1em=16px
+부모가 폰트크기를 24px로 지정한 경우 자식의 폰트가 0.75em으로 설정했다면 몇 px? =18px
+조상의 폰트크기를 선언하지않은 경우, 1rem=16px */
+html {
+  /* font-size: 40px; */
+}
+.unit_rem > p {
+  font-size: 0.5rem;
+  line-height: 1;
+  background-color: #f90;
+}
+.fw_100 {
+  font-weight: 100;
+}
+.fw_200 {
+  font-weight: 200;
+}
+.fw_300 {
+  font-weight: 300;
+}
+.fw_400 {
+  font-weight: 400;
+}
+.fw_500 {
+  font-weight: 500;
+}
+.fw_600 {
+  font-weight: 600;
+}
+.fw_700 {
+  font-weight: 700;
+}
+.fw_800 {
+  font-weight: 800;
+}
+.fw_900 {
+  font-weight: 900;
+}
+.fw_lighter {
+  font-weight: lighter;
+}
+.fw_normal {
+  font-weight: normal;
+}
+.fw_bold {
+  font-weight: bold;
+}
+.fs_italic {
+  font-style: italic;
+}
+.ta_left {
+  text-align: left;
+  background-color: #faf;
+}
+.ta_center {
+  text-align: center;
+  background-color: #fcf;
+}
+.ta_right {
+  text-align: right;
+  background-color: #cff;
+}
+.ta_jusiyfy {
+  text-align: justify;
+}
+.inline_ta_center {
+  text-align: center;
+  background: #ccf;
+  display: block;
+}
+
+.rel_align span:nth-child(1) {
+  font-size: 20px;
+  background-color: #aff;
+  line-height: 1;
+  vertical-align: middle;
+}
+.rel_align span:nth-child(2) {
+  font-size: 40px;
+  background-color: #faf;
+  line-height: 1;
+  vertical-align: middle;
+}
+.cart {
+}
+.cart a {
+  background-color: #caf;
+  text-decoration: none;
+  line-height: 1;
+  color: black;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 16px;
+}
+.cart a img {
+  height: 20px;
+  vertical-align: middle;
+}
+.cart a span {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.ti_plus {
+  text-indent: 40px;
+}
+.ti_minus {
+  text-indent: -40px;
+}
+
+/* 대문자, 소문자, 첫글자만 대문자(text-transform):uppercase, lowercase, capitalize */
+.tt_uppercase {
+  text-transform: uppercase;
+}
+.tt_lowercase {
+  text-transform: lowercase;
+}
+.tt_capitalize {
+  text-transform: capitalize;
+}
+
+/* 문장에 가로줄 긋기(text-decoration): underline, line-through, overline, none */
+.td_underline {
+  text-decoration: underline;
+}
+.td_through {
+  text-decoration: line-through;
+}
+.td_overline {
+  text-decoration: overline;
+}
+.td_none {
+  text-decoration: none;
+}
+
+/* 문단의 높이(line-height) */
+.lh_multiple {
+  background-color: #afa;
+  line-height: 4;
+}
+.lh_px{background-color: #faf;
+  line-height: 40px;
+}
