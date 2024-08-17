@@ -18,3 +18,48 @@
   background-color: gray;
   background-image: url(../img/img/snoopy.png);
 }
+
+/* 배경의 위치선언(background-position : 수평위치 수직위치) */
+.bgi_img_02 {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  background-image: url(../img/img/snoopy.png);
+  background-position: 50% 50%;
+  background-position: center center;
+  background-position: 50% center;
+  background-position: 50%;
+  /* 하나의 선언만으로도 가로 위치와 세로 위치를 동일 적용시킴 */
+}
+
+/* 배경의 사이즈 조정(background-size : cover / contain) */
+.bgs_img_03 {
+  width: 400px;
+  height: 300px;
+  background-color: #eee;
+  background-image: url(../img/img/university_01.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.bgs_img_04 {
+  width: 200px;
+  height: 200px;
+  background-color: #eee;
+  background-image: url(../img/img/jan.png);
+  background-size: contain;
+  background-position: 50% 50%;
+}
+
+/* 배경의 반복(패턴) 설정(background-repeat) */
+.bgr_img_05 {
+  width: 400px;
+  height: 400px;
+  background-color: #aff;
+  background-image: url(../img/img/snoopy.png);
+  background-position: 50% 50%;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+
+}
