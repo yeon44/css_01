@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+.half_transparent {
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/img/university_01.jpg);
+}
+
+.half_transparent .dark_cover {
+  width: 150px;
+  height: 200px;
+  background-color: rgba(200, 0, 0, 0.5);
+}
+
+.bgi_img_01 {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  background-image: url(../img/img/snoopy.png);
+}
