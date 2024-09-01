@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url("https://fonts.googleapis.com/css2?family=Gasoek+One&family=Nanum+Myeongjo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
 @font-face {
   font-family: "BM DoHyeon";
   src: url("../fonts/BMDoHyeon.eot");
@@ -14,44 +14,44 @@
 }
 * {
   /* font-family: "BM DoHyeon"; */
-  font-family: "Nanum Myeongjo", serif;
+  /* font-family: "Single Day", cursive; */
 }
 .external_font {
-  font-family: "Nanum Myeongjo", serif;
+  font-family: "Single Day", cursive;
 }
 .inner_font {
   font-family: "BM DoHyeon";
 }
+
 /* 폰트의 크기(font-size) */
 .unit_px {
   font-size: 20px;
 }
-/* 기본은 16, 14px이하로 쓰면 안보임 */
 .unit_pt {
   font-size: 20pt;
 }
-/* px,pt랑 같은 사이즈여도 pt가 더 큼 */
+
 .unit_vw {
   font-size: 10vw;
 }
-/* 화면을 꽉 채우는(화면 크기에 따라 다름 */
 .unit_vh {
-  font-size: 5vh;
+  font-size: 10vh;
 }
+
 .unit_em {
-  font-size: 32px;
+  font-size: 50px;
   line-height: 1;
   background-color: #faa;
 }
-.unit_em > h5 > {
+.unit_em > h5 {
   font-size: 0.75em;
 }
 .unit_em > p {
   font-size: 0.5em;
 }
-/* 부모가 폰트의 크기를 선언하지 않은경우, 1em=16px
-부모가 폰트크기를 24px로 지정한 경우 자식의 폰트가 0.75em으로 설정했다면 몇 px? =18px
-조상의 폰트크기를 선언하지않은 경우, 1rem=16px */
+/* 부모가 폰트의 크기를 선언하지 않은 경우, 1em = 16px 
+부모가 폰트의 크기를 24px로 지정환 경우 자식의 폰트가 0.75em으로 설정했다면 몇 px? => 18px 
+*/
 html {
   /* font-size: 40px; */
 }
@@ -60,6 +60,11 @@ html {
   line-height: 1;
   background-color: #f90;
 }
+/* 조상이 폰트의 크기를 선언하지 않은 경우, 1rem = 16px 
+조상의 폰트 크기를 24px로 지정환 경우 후손의 폰트가 0.75em으로 설정했다면 몇 px? => 18px 
+*/
+
+/* 폰트 가중치(font-weight) */
 .fw_100 {
   font-weight: 100;
 }
@@ -96,30 +101,35 @@ html {
 .fw_bold {
   font-weight: bold;
 }
+
+/* 폰트 스타일(font-style)  */
 .fs_italic {
   font-style: italic;
 }
+
+/* 문단의 가로방향 정렬(text-align) */
 .ta_left {
   text-align: left;
-  background-color: #faf;
+  background-color: #ffc;
 }
 .ta_center {
   text-align: center;
-  background-color: #fcf;
+  background-color: #cff;
 }
 .ta_right {
   text-align: right;
-  background-color: #cff;
-}
-.ta_jusiyfy {
-  text-align: justify;
+  background-color: #fcf;
 }
 .inline_ta_center {
   text-align: center;
-  background: #ccf;
-  display: block;
+  background-color: #ccf;
+  /* display: block; */
+}
+.ta_justify {
+  text-align: justify;
 }
 
+/* 수직방향에서의 상대적 정렬(vertical-align) */
 .rel_align span:nth-child(1) {
   font-size: 20px;
   background-color: #aff;
@@ -137,8 +147,8 @@ html {
 .cart a {
   background-color: #caf;
   text-decoration: none;
-  line-height: 1;
-  color: black;
+  line-height: 2;
+  color: #000;
   display: inline-block;
   padding-left: 20px;
   padding-right: 20px;
@@ -153,14 +163,15 @@ html {
   vertical-align: middle;
 }
 
+/* 들여쓰기 & 내여쓰기(text-indent) */
 .ti_plus {
   text-indent: 40px;
 }
 .ti_minus {
-  text-indent: -40px;
+  text-indent: -9999px;
 }
 
-/* 대문자, 소문자, 첫글자만 대문자(text-transform):uppercase, lowercase, capitalize */
+/* 대문자, 소문자, 첫글자만 대문자(text-transform) */
 .tt_uppercase {
   text-transform: uppercase;
 }
@@ -171,7 +182,7 @@ html {
   text-transform: capitalize;
 }
 
-/* 문장에 가로줄 긋기(text-decoration): underline, line-through, overline, none */
+/* 문장에 가로줄 긋기(text-decoration) */
 .td_underline {
   text-decoration: underline;
 }
@@ -190,6 +201,7 @@ html {
   background-color: #afa;
   line-height: 4;
 }
-.lh_px{background-color: #faf;
+.lh_px {
+  background-color: #faf;
   line-height: 40px;
 }

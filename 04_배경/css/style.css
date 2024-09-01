@@ -3,33 +3,31 @@
 .half_transparent {
   width: 200px;
   height: 200px;
-  background-image: url(../img/img/university_01.jpg);
+  background-image: url(../img/university_01.jpg);
 }
-
 .half_transparent .dark_cover {
   width: 150px;
-  height: 200px;
-  background-color: rgba(200, 0, 0, 0.5);
+  height: 150px;
+  background-color: rgba(255, 0, 0, 0.5);
 }
 
+/* 배경이미지(background-image:url(이미지 파일의 경로)) */
 .bgi_img_01 {
   width: 100px;
   height: 100px;
-  background-color: gray;
-  background-image: url(../img/img/snoopy.png);
+  background-color: #ccc;
+  background-image: url(../img/snoopy.png);
 }
-
-/* 배경의 위치선언(background-position : 수평위치 수직위치) */
+/* 배경의 위치 선언(background-position: 수평위치 수직위치) */
 .bgi_img_02 {
   width: 100px;
   height: 100px;
-  background-color: gray;
-  background-image: url(../img/img/snoopy.png);
+  background-color: #ccc;
+  background-image: url(../img/snoopy.png);
   background-position: 50% 50%;
   background-position: center center;
   background-position: 50% center;
-  background-position: 50%;
-  /* 하나의 선언만으로도 가로 위치와 세로 위치를 동일 적용시킴 */
+  background-position: 50%; /* 하나의 선언만으로도 가로위치와 세로 위치를 동일 적용시킴 */
 }
 
 /* 배경의 사이즈 조정(background-size : cover / contain) */
@@ -37,16 +35,15 @@
   width: 400px;
   height: 300px;
   background-color: #eee;
-  background-image: url(../img/img/university_01.jpg);
+  background-image: url(../img/university_01.jpg);
   background-position: 50% 50%;
   background-size: cover;
 }
-
 .bgs_img_04 {
   width: 200px;
   height: 200px;
-  background-color: #eee;
-  background-image: url(../img/img/jan.png);
+  background-color: #ffa;
+  background-image: url(../img/jan.png);
   background-size: contain;
   background-position: 50% 50%;
 }
@@ -56,48 +53,46 @@
   width: 400px;
   height: 400px;
   background-color: #aff;
-  background-image: url(../img/img/snoopy.png);
+  background-image: url(../img/snoopy.png);
   background-position: 50% 50%;
   background-size: 20px;
   background-repeat: no-repeat;
   background-repeat: repeat-x;
+  background-repeat: repeat-y;
   background-repeat: repeat;
 }
 
-/* 배경의 parallax 효과(background-attach: scroll(기본값) fixed) */
-
+/* 배경의 parallax 효과(background-attach: scroll(기본값) / fixed) */
 .bga_img_06 {
   width: 100%;
   height: 300px;
   margin-bottom: 300px;
-  background-image: url(../img/img/wallpaper.png);
+  background-image: url(../img/wallpaper.png);
   background-position: 50% 50%;
   background-attachment: fixed;
 }
 
 .total_bg {
   width: 100px;
-  height: 100px;
-  background: black url(../img/img/university_02.jpg) no-repeat scroll 50% 50%/ 50%
+  height: 300px;
+  background: #000 url(../img/university_02.jpg) no-repeat scroll 50% 50%/50%
     auto;
 }
 
 .parent_bg {
   width: 300px;
   height: 300px;
-  background-image: url(../img/img/jan.png);
+  background-image: url(../img/jan.png);
   background-position: 50% 50%;
   background-size: cover;
 }
-
 .child_bg {
   width: 300px;
   height: 300px;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
 .child_bg h2 {
-  color: white;
+  color: #fff;
   line-height: 300px;
   text-align: center;
 }

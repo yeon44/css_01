@@ -1,0 +1,492 @@
+@charset "utf-8";
+
+.float_left {
+  width: 100%;
+  background-color: #faa;
+}
+.float_left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.float_left ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.float_left ul li {
+  float: left;
+  margin: 0 10px;
+  background-color: #aff;
+}
+.float_left ul li a {
+  color: #555;
+  text-decoration: none;
+}
+
+.float_right {
+  width: 100%;
+  background-color: #faa;
+}
+.float_right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.float_right ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.float_right ul li {
+  float: right;
+  margin: 0 10px;
+  background-color: #aff;
+}
+.float_right ul li a {
+  color: #555;
+  text-decoration: none;
+}
+
+.adidas_header_01 {
+  height: 80px;
+  background-color: #ddd;
+}
+.adidas_header_01 .logo {
+  float: left;
+  /* background-color: #ffa; */
+  font-size: 0;
+  padding-top: 10px;
+}
+.adidas_header_01 .logo a {
+}
+.adidas_header_01 .logo a img {
+  height: 60px;
+}
+
+.adidas_header_01 .menu {
+  float: right;
+  /* background-color: #faf; */
+}
+.adidas_header_01 .menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.adidas_header_01 .menu ul li {
+  float: left;
+  margin: 0 10px;
+}
+.adidas_header_01 .menu ul li a {
+  text-decoration: none;
+  display: block;
+  height: 80px;
+  line-height: 80px;
+}
+
+/* display: block | inline | inline-block | none */
+#display {
+  font-size: 0;
+}
+#display .img_box {
+  width: calc(25% - 20px);
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 10px;
+  height: 100px;
+}
+#display .img_box.bg1 {
+  background-color: #faa;
+}
+#display .img_box.bg2 {
+  background-color: #ff0;
+}
+#display .img_box.bg3 {
+  background-color: #0f0;
+}
+#display .img_box.bg4 {
+  background-color: #f90;
+}
+
+.display_inline {
+  font-size: 0;
+}
+.display_inline span {
+  background-color: #aaf;
+  width: 200px;
+  height: 100px;
+  font-size: 16px;
+}
+
+.display_center {
+  width: 100%;
+  background-color: #ddd;
+}
+.display_center .wrap {
+  width: 100%;
+  background-color: #9cf;
+  text-align: center;
+}
+.display_center .wrap .img_box {
+  display: inline-block;
+  /* text-align: center; */
+  /* text-align: inherit; */
+  width: 80px;
+}
+.display_center .wrap .img_box.bg1 {
+  background-color: #ffa;
+}
+.display_center .wrap .img_box.bg2 {
+  background-color: #faa;
+}
+.display_center .wrap .img_box.bg3 {
+  background-color: #afa;
+}
+.display_center .wrap .img_box.bg4 {
+  background-color: #aaf;
+}
+
+.display_space {
+  width: 200px;
+  height: 200px;
+  background-color: #ff9;
+  background-image: url(../img/snoopy_02.png);
+  background-size: cover;
+}
+.display_space .dark_bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none; /*공간 자체가 사라짐*/
+}
+.display_space:hover .dark_bg {
+  display: block;
+}
+.display_space .dark_bg p {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 200px;
+  font-weight: bold;
+}
+
+/* display: table / table-cell */
+table {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+table tr {
+}
+table tr td {
+  text-align: center;
+  vertical-align: bottom;
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/dog.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+table tr td div {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #f90;
+  display: none;
+  padding: 10px 0;
+}
+table tr td:hover div {
+  display: block;
+}
+
+.d_table {
+  display: table;
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/dog.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.d_table .d_tableCell {
+  display: table-cell;
+  text-align: right;
+  vertical-align: bottom;
+  color: #f90;
+  padding-bottom: 10px;
+}
+.d_table .d_tableCell div {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  padding: 10px 20px 10px 0;
+}
+.d_table .d_tableCell:hover div {
+  display: block;
+}
+
+.banner {
+  display: table;
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/dog.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.banner div {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.banner h4 {
+}
+.banner button {
+}
+
+/* display: flex; */
+#flex1 {
+  display: flex;
+  height: 300px;
+  background-color: #ddd;
+
+  /*자식의 방향 정렬*/
+  /* flex-direction: row; /*기본값 : 좌측으로부터 가로 배치*/
+  /* flex-direction: column; /*강제로 세로 배치*/
+  /* flex-direction: row-reverse; /*가로배치간 역방향으로 배치*/
+  /* flex-direction: column-reverse; /*세로배치간 역방향으로 배치*/
+
+  /*자식의 가로방향에 대한 설정*/
+  justify-content: center;
+  /* justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: space-between; /*부모입장에서 자식 공간 사이의 값을 균등하게 적용한다.*/
+  /* justify-content: space-around; /*자식을 기준으로 주변 공간을 균등하게 적용한다.*/
+
+  /*자식의 세로방향 설정*/
+  align-items: center;
+  /* align-items: flex-start;
+  align-items: flex-end;
+  align-items: baseline; /*글자 하단을 기준으로 구성시 적용*/
+}
+#flex1 .item {
+  width: 150px;
+  height: 150px;
+}
+#flex1 .item:nth-child(1) {
+  background-color: #faa;
+  font-size: 20px;
+}
+#flex1 .item:nth-child(2) {
+  background-color: #afa;
+  font-size: 40px;
+}
+#flex1 .item:nth-child(3) {
+  background-color: #aaf;
+  font-size: 60px;
+}
+#flex1 .item:nth-child(4) {
+  background-color: #ffa;
+}
+
+.flex-header1 {
+  background-color: #ddd;
+  height: 80px;
+}
+.flex-header1 .wrap {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-header1 .wrap .logo {
+  width: 152px;
+  background-color: #ff9;
+}
+.flex-header1 .wrap .logo a {
+}
+.flex-header1 .wrap .logo a img {
+  height: 60px;
+}
+
+.flex-header1 .wrap .menu {
+  background-color: #ff9;
+}
+.flex-header1 .wrap .menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.flex-header1 .wrap .menu ul li {
+  margin: 0 10px;
+}
+.flex-header1 .wrap .menu ul li a {
+  text-decoration: none;
+}
+
+.flex-header1 .wrap .sign {
+  background-color: #ff9;
+}
+.flex-header1 .wrap .sign ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.flex-header1 .wrap .sign ul li {
+  margin: 0 10px;
+}
+.flex-header1 .wrap .sign ul li a {
+  text-decoration: none;
+}
+
+.flex-content1 {
+  padding: 20px 0;
+  background-color: #ddd;
+}
+.flex-content1 .wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /*단을 떨어지도록 구성해주는 설정*/
+  /* padding: 0 10px; */
+  row-gap: 20px;
+  /* column-gap: 20px; */
+}
+.flex-content1 .wrap .item {
+  width: calc(25% - 20px);
+  height: 120px;
+  background-color: #ff8;
+  /* margin: 0 10px 20px 10px; */
+}
+
+.flex_child1 {
+  width: 100%;
+  display: flex;
+  background-color: #ddd;
+}
+.flex_child1 .item {
+  width: auto;
+  width: 100%;
+  height: 100px;
+}
+
+/*flex-grow: (확장) 비례값으로 배치된다.*/
+/*flex-shrink: (축소) 비례값으로 배치된다.*/
+.flex_child1 .item:nth-child(1) {
+  background-color: #aaf;
+  /* flex-grow: 1; */
+  flex-shrink: 2;
+  /* order: 3; */
+}
+.flex_child1 .item:nth-child(2) {
+  background-color: #fc5;
+  /* flex-grow: 2; */
+  flex-shrink: 2;
+  /* order: 1; */
+}
+.flex_child1 .item:nth-child(3) {
+  background-color: #c5f;
+  /* flex-grow: 3; */
+  flex-shrink: 3;
+  /* order: 4; */
+}
+.flex_child1 .item:nth-child(4) {
+  background-color: #cf5;
+  /* flex-grow: 4; */
+  flex-shrink: 4;
+  /* order: 2; */
+}
+
+/* position */
+.po_static {
+  width: 300px;
+  height: 300px;
+  background-color: #faa;
+  position: static;
+  margin-top: 30px;
+  /* top: 30px; */
+  margin-left: 60px;
+}
+.po_relative {
+  width: 300px;
+  height: 300px;
+  background-color: #ffa;
+  position: relative;
+  top: -30px;
+  left: 90px;
+}
+.po_absolute {
+  width: 300px;
+  height: 300px;
+  background-color: #aaf;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+/*양의 울타리*/
+.po_rel_space {
+  width: 300px;
+  height: 300px;
+  background-color: #ddd;
+  position: relative;
+  left: 80px;
+}
+/*양 한마리*/
+.po_abs_space {
+  width: 50px;
+  height: 50px;
+  background-color: #f00;
+  position: absolute;
+  /* bottom: 0;
+  right: 0; */
+  top: -25px;
+  right: -25px;
+}
+
+.ad_photo {
+  width: 400px;
+  height: 300px;
+  background-image: url(../img/chair.jpg);
+  background-position: 50% 50%;
+  position: relative;
+}
+.ad_photo img {
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  left: 150px;
+  top: 110px;
+}
+.ad_photo h4 {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  margin: 0;
+  font-size: 40px;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.po_fixed {
+  width: 100px;
+  height: 100px;
+  background-color: #f00;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 40px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.modal_popup {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #777;
+  position: fixed;
+  top: calc(50% - 100px);
+  left: calc(50% - 150px);
+}
