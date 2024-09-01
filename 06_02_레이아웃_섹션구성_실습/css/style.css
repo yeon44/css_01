@@ -196,10 +196,12 @@ button {
   justify-content: center;
   align-items: center;
   border-top: 1px solid #7f7f7f;
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
 }
 #mad_menu .wrap .menu > ul > li:hover > ul {
-  display: flex;
+  max-height: 60px;
 }
 #mad_menu .wrap .menu > ul > li > ul > li {
   margin: 0 20px;
@@ -223,7 +225,7 @@ button {
   position: relative;
 }
 
-#mad_menu .wrap .my ul li::after {
+#mad_menu .wrap .my ul li:after {
   content: "";
   position: absolute;
   top: 0;
